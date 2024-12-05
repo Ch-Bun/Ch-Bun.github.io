@@ -18,6 +18,7 @@
         header {
             display: flex;
             justify-content: space-between; /* Pushes content to the sides */
+            align-items: center;
             font-family: "DM Serif Display", serif;
             font-style: normal;
             background: #3B7D23;
@@ -25,11 +26,11 @@
             padding: 1rem 0;
             text-align: center;
         }
-        header div .general {
-            display: flex;
-            justify-content: center;
+        div.general {
+            flex-grow: 4;
         }
         header img {
+            flex-shrink: 1;
             width: 100px;
             height: 100px;
             border-radius: 50%; /* Makes the image circular */
@@ -95,7 +96,7 @@
         <h1>Charlotte Bunnenberg</h1>
         <p>Researcher in Eco-evolutionary modelling</p>
         </div>
-        <img src="Profile_pic_square.jpg">
+        <img alt="profile picture" src="profile_pic_square.jpg">
     </header>
     <nav>
         <a href="#profile">Profile</a>
