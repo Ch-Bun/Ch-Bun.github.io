@@ -16,6 +16,8 @@
             color: #333;
         }
         header {
+            display: flex;
+            justify-content: space-between; /* Pushes content to the sides */
             font-family: "DM Serif Display", serif;
             font-style: normal;
             background: #3B7D23;
@@ -26,7 +28,7 @@
             width: 100px;
             height: 100px;
             border-radius: 50%; /* Makes the image circular */
-            border: 3px solid #007acc;
+            border: 3px solid  #D9F2D0;
         }
         header h1 {
             font-weight: 600;
@@ -84,9 +86,12 @@
 </head>
 <body>
     <header>
+        <div>
         <h1>Charlotte Bunnenberg</h1>
-        <img src="Profile_pic_square.jpg">
         <p>Researcher in Eco-evolutionary modelling</p>
+        </div>
+        <img src="Profile_pic_square.jpg">    
+
     </header>
     <nav>
         <a href="#profile">Profile</a>
