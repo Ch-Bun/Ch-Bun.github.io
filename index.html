@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Researcher CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Researcher CV</title>
     <style>
         body {
             font-family: "DM Sans", sans-serif;
@@ -15,6 +16,7 @@
             padding: 0;
             color: #333;
         }
+
         header {
             display: flex;
             flex-direction: row;
@@ -22,27 +24,33 @@
             align-items: center;
             font-family: "DM Serif Display", serif;
             font-style: normal;
-            background: #3B7D23;
-            color: white;
+            background: none;
+            color: black;
             padding: 1rem 0;
             text-align: center;
+            /* border-bottom: 1px solid black;*/
         }
+
         div.general {
             flex-grow: 4;
             padding-left: 100px;
         }
+
         header img {
             flex-shrink: 1;
             width: 100px;
             height: 100px;
             border-radius: 50%; /* Makes the image circular */
-            border: 3px solid  #D9F2D0;
+            /*border: 3px solid  #D9F2D0;*/
+            margin: 10px;
         }
+
         header h1 {
             font-weight: 600;
             margin: 0;
             font-size: 3rem;
         }
+
         header p {
             font-family: "DM Sans", sans-serif;
             font-optical-sizing: auto;
@@ -51,42 +59,74 @@
             font-style: normal;
             margin-top: 0;
         }
+
         nav {
-            background: #D9F2D0;
+            background: none;
             color: white;
             padding: 0.5rem 0;
             text-align: center;
+            box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, .11);
         }
-        nav a {
-            color: grey;
-            text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+
+            nav a {
+                color: grey;
+                text-decoration: none;
+                margin: 0 1rem;
+                font-size: 1rem;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
             padding: 2rem 0;
         }
+
         section {
             margin-bottom: 2rem;
         }
-        section h2 {
-            border-bottom: 2px solid #3B7D23;
-            padding-bottom: 0.5rem;
-        }
+
+            section h2 {
+                border-bottom: 2px solid black;
+                padding-bottom: 0.5rem;
+            }
+
         ul {
-           /* list-style-type: circle;  Options: circle, square, disc, etc. */
-            margin-left: 20px;
-            color: #3B7D23;
+            /* list-style-type: circle;  Options: circle, square, disc, etc. */
+            /*margin-left: 20px;*/
         }
-        ul li {
+
+        ul > li {
             margin-bottom: 0.5rem;
         }
+
+        i {
+            padding: 10px;
+            align-content: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+            gap: 20px; /* Space between the columns */
+            padding: 0px;
+        }
+
+        .grid-item {
+           /* padding: 20px;*/
+           /* border: 1px solid #ddd;*/
+            text-align: left;
+            border-radius: 5px;
+        }
+
+        p.paragraph {
+            text-align: justify;
+        }
+
         footer {
             text-align: center;
             background: #333;
@@ -98,12 +138,18 @@
             div.general {
                 padding-left: 0px;
             }
+
             header {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between; /* Pushes content to the sides */
                 align-items: center;
             }
+
+            .grid-container {
+                grid-template-columns: 1fr; /* Single column */
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,14 +163,13 @@
     <nav>
         <a href="#profile">Profile</a>
         <a href="#research">Research</a>
-        <!--<a href="#publications">Publications</a>
-        <a href="#teaching">Teaching</a> -->
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
         <section id="profile">
             <h2>Profile</h2>
-            <p>Hello! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modeling. 
+            <p class="paragraph">Hello! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modeling. 
                 <br>
                 My journey began with a passion for the intersection of computer science and biology, leading me to pursue 
                 a bachelor's degree in Computer Science and Biology at the University of Osnabrück, Germany. 
@@ -132,11 +177,9 @@
                 <br>
                 Currently, I am a PhD student in 
                 <a href="https://gretabocedi.com/" target="_blank">
-                Greta Bocedi’s Research Group
-            </a>, , contributing to the international project 
+                Greta Bocedi’s Research Group</a>, contributing to the international project 
                 <a href="https://bio.au.dk/en/research/research-centres/centre-for-ecological-genetics" target="_blank">
-                "The missing link: unraveling the role of genetic variation of beneficial arthropods in agro-ecosystems"
-                </a>,
+                "The missing link: unraveling the role of genetic variation of beneficial arthropods in agro-ecosystems"</a>,
                 funded by the Novo Nordisk Foundation.
                 <br>
                 My research focuses on the impact of dynamic landscape processes on genetic diversity. 
@@ -147,36 +190,36 @@
         </section>
         <section id="research">
             <h2>Research</h2>
-            <p>My research interests include:</p>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Landscape connectivity analysis</li>
+                        <li>Method development</li>
+                        <li>Science communication</li>
+                        <li>Data science</li>
+                        <li>Theoretical population genetics</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>Bunnenberg (2024). blabla.</li>
+                    </ul>
+                </div>
+            </div>
             
-            <ul>
-                <li>Landscape connectivity analysis</li>
-                <li>Method development</li>
-                <li>Science communication</li>
-                <li>Data science</li>
-                <li>Theoretical population genetics</li>
-            </ul>
         </section>
-        <!-- <section id="publications">
-            <h2>Publications</h2>
-            <ul>
-                <li>Bunnenberg (2024). blabla.</li>
-            </ul>
-        </section> 
-        <section id="teaching">
-            <h2>Teaching</h2>
-            <p>I have taught the following courses:</p>
+        <section id="education">
+            <h2>Education</h2>
             <ul>
                 <li>Introduction to </li>
             </ul>
-        </section>-->
+        </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can reach me at:</p>
-            <ul>
-                <li>E-mail: c.bunnenberg.24@abdn.ac.uk</li>
-                <li>Office: School of Biological Sciences, University of Aberdeen, Aberdeen AB24 2TZ, United Kingdom</li>
-            </ul>
+            <p> <i class="fas fa-solid fa-envelope fa-lg"></i> c.bunnenberg.24@abdn.ac.uk</p>
+            <p> <i class="fa-solid fa-location-dot fa-lg"></i> School of Biological Sciences, University of Aberdeen, Aberdeen AB24 2TZ, United Kingdom</p>
         </section>
     </div>
     <footer>
