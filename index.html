@@ -133,6 +133,19 @@
             color: white;
             padding: 1rem 0;
         }
+        table {
+            width: 100%; /* Adjust to fit the container */
+            border-collapse: collapse; /* Ensures no gaps between cells */
+        }
+
+        td {
+            padding: 10px;
+            text-align: left; /* Align text to the left */
+        }
+        .col-1 {
+            white-space: nowrap; /* Prevents text from wrapping *//
+        }
+
         /* align header differently */
         @media only screen and (max-device-width: 700px) {
             div.general {
@@ -169,15 +182,16 @@
     <div class="container">
         <section id="profile">
             <h2>Profile</h2>
-            <p class="paragraph">Hello! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modeling. 
+            <p class="paragraph">Hello! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modelling. 
                 <br>
                 My journey began with a passion for the intersection of computer science and biology, leading me to pursue 
                 a bachelor's degree in Computer Science and Biology at the University of Osnabrück, Germany. 
                 I further honed my expertise by earning a master’s degree in Informatics for the Natural Sciences at Bielefeld University.
-                <br>
+                <br> <br>
+
                 Currently, I am a PhD student in 
                 <a href="https://gretabocedi.com/" target="_blank">
-                Greta Bocedi’s Research Group</a>, contributing to the international project 
+                Greta Bocedi’s Research Group</a> at the University of Aberdeen, contributing to the international project 
                 <a href="https://bio.au.dk/en/research/research-centres/centre-for-ecological-genetics" target="_blank">
                 "The missing link: unraveling the role of genetic variation of beneficial arthropods in agro-ecosystems"</a>,
                 funded by the Novo Nordisk Foundation.
@@ -204,7 +218,10 @@
                 <div class="grid-item">
                     <h3>Projects</h3>
                     <ul>
-                        <li>Bunnenberg (2024). blabla.</li>
+                        <li>
+                            Co-organiser of<a href="https://www.yomos.org/" target="_blank"> YoMos Workshop May 2025. Ilmenau, Germany. </a>
+
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -212,9 +229,45 @@
         </section>
         <section id="education">
             <h2>Education</h2>
-            <ul>
-                <li>Introduction to </li>
-            </ul>
+            <table>
+                <tr>
+                    <td class="col-1">2024 – to date</td>
+                    <td>Ph.D. in Ecology, School of Biological Sciences, University of Aberdeen, Scotland</td>
+                </tr>
+                <tr>
+                    <td class="col-1">2022 – 2023</td>
+                    <td>Study Abroad (Bioinformatics Masters of Science), Aarhus University, Denmark</td>
+                </tr>
+                <tr>
+                    <td class="col-1">2020 – 2023</td>
+                    <td>Masters of Science in Informatics in the Natural Sciences , University of Bielefeld, Germany</td>
+                </tr>
+
+                <tr>
+
+                    <td class="col-1">2018 – 2020</td>
+                    <td>Bachelors of Science in Computer Science and Biology (Dual Major), University of Osnabrück, Germany</td>
+                </tr>
+
+            </table>
+            <h4>Further Experience</h4>
+            <table>
+                <tr>
+                    <td class="col-1">Mar 2022 – Jun 2022</tdclass="col-1">
+                    <td>Internship at Fraunhofer EU Office, Brussels, Belgium</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Oct 2022 – Oct 2023</td>
+                    <td>Supplementary program “Europa Intensiv“, University of Bielefeld, Germany</td>
+                </tr>
+                <tr>
+                    <td class="col-1">Apr 2020 – Jun 2020</td>
+                    <td>
+                        Industrial internship at the Computational Biology of Aging Research Group, Leibniz Institute on Aging – Fritz Lipmann Institute, Jena, Germany
+                    </td>
+                </tr>
+
+            </table>
         </section>
         <section id="contact">
             <h2>Contact</h2>
