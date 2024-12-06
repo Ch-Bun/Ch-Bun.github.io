@@ -142,6 +142,7 @@
         td {
             padding: 10px;
             text-align: left; /* Align text to the left */
+            vertical-align: top;
         }
         .col-1 {
             white-space: nowrap; /* Prevents text from wrapping *//
@@ -167,6 +168,15 @@
                 white-space: normal; /* Prevents text from wrapping */
                 min-width: 100px;
             }
+            nav a {
+                color: grey;
+                text-decoration: none;
+                margin: 0 0.5rem;
+                font-size: 1rem;
+            }
+            footer {
+                padding: 2px 20px;
+            }
         }
     </style>
 </head>
@@ -187,7 +197,7 @@
     <div class="container">
         <section id="profile">
             <h2>Profile</h2>
-            <p class="paragraph">Hello! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modelling. 
+            <p class="paragraph">Hello World! My name is Charlotte Bunnenberg, and I am a researcher specializing in eco-evolutionary modelling. 
                 <br>
                 My journey began with a passion for the intersection of computer science and biology, leading me to pursue 
                 a bachelor's degree in Computer Science and Biology at the University of Osnabrück, Germany. 
@@ -255,7 +265,7 @@
                 </tr>
 
             </table>
-            <h4>Further Experience</h4>
+            <h3>Further Experience</h3>
             <table>
                 <tr>
                     <td class="col-1">Mar 2022 – Jun 2022</tdclass="col-1">
@@ -276,8 +286,16 @@
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p> <i class="fas fa-solid fa-envelope fa-lg"></i> c.bunnenberg.24@abdn.ac.uk</p>
-            <p> <i class="fa-solid fa-location-dot fa-lg"></i> School of Biological Sciences, University of Aberdeen, Aberdeen AB24 2TZ, United Kingdom</p>
+            <table>
+                <tr>
+                    <td ><i class="fas fa-solid fa-envelope fa-lg"></i></tdclass="col-1">
+                    <td>c.bunnenberg.24@abdn.ac.uk</td>
+                </tr>
+                <tr>
+                    <td ><i class="fa-solid fa-location-dot fa-lg"></i></td>
+                    <td>School of Biological Sciences, University of Aberdeen, Aberdeen AB24 2TZ, United Kingdom</td>
+                </tr>
+            </table>
         </section>
     </div>
     <footer>
